@@ -140,9 +140,9 @@ const typeByName = module.exports.typeByName = {
   ['TimeN', 'Time'],
   ['UniqueIdentifierN', 'UniqueIdentifier']
 ].forEach(function([alias, name]) {
-  deprecate.property(typeByName, alias, 'The `' + alias + '` data type alias is deprecated, please use `' + name + '` instead.');
+  // deprecate.property(typeByName, alias, 'The `' + alias + '` data type alias is deprecated, please use `' + name + '` instead.');
 });
 
 ['IntN', 'BitN', 'FloatN', 'MoneyN', 'DateTimeN', 'DecimalN', 'NumericN'].forEach(function(name) {
-  deprecate.property(typeByName, name, 'The `' + name + '` data type is internal and will be removed.');
+  // deprecate.property(typeByName, name, 'The `' + name + '` data type is internal and will be removed.');
 });
